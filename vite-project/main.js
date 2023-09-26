@@ -39,7 +39,7 @@ loader.load('./Billcypher4.glb', (gltf) => {
    // Scale the model
    model.scale.set(1.5, 1.5, 1.5);
   model.position.set(2, 0, 0);  // Set position (x, y, z)
-  scene.add(model);  // Add model to scene
+  //scene.add(model);  // Add model to scene
 });
 const tloader = new THREE.TextureLoader();
 tloader.load('./Attachments/galaxy3.jpg', function(texture) {
@@ -52,7 +52,7 @@ const neptune_ = tloader.load('./Attachments/Neptune.jpeg')
 const moon_ = tloader.load('./Attachments/moon.jpeg')
 const mars_ = tloader.load('./Attachments/mars.jpeg')
 const saturn_ = tloader.load('./Attachments/Saturn.jpeg')
-const sun_ = tloader.load('./Attachments/sun.jpeg')
+const sun_ = tloader.load('./Attachments/twan.png')
 
 
 
@@ -206,11 +206,11 @@ let angleNeptune = 0;
 let angleSaturn = 0;
 
 let verticalAngle=0;
-const radius = 8;
-const radius2 = 12;
-const radius3 = 16;
-const radius4 = 22;
-const radius5=27;
+const radius = 12;
+const radius2 = 16;
+const radius3 = 20;
+const radius4 = 26;
+const radius5=31;
 const animate = () => {
   requestAnimationFrame(animate);
   particlesMesh.geometry.attributes.position.needsUpdate = true;
@@ -259,7 +259,7 @@ const animate = () => {
   satring.rotation.x += .02;
 
   sunm.position.x=-4.5;
-  sunm.position.y=10;
+  sunm.position.y=0;
   sunm.rotation.y+=0.03;
 
 
